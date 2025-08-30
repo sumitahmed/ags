@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - AgriSense AI</title>
+    <link rel="stylesheet" href="/styles/login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="/" style="text-decoration: none; color: inherit;">
+                <div class="logo-section">
+                    <h1 class="logo">AgriSense AI</h1>
+                </div>
+            </a>
+            <div class="nav-section">
+                <div class="nav-links">
+                    </div>
+                <a href="/login" class="signup-btn" style="text-decoration: none;">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="content-container">
+            <div class="background-image-container">
+                <img src="/images/backgrounds/login-background.png" alt="AgriSense AI Background" class="background-image">
+            </div>
+            
+            <div class="login-form-overlay">
+                <div class="welcome-text">
+                    <h2>Welcome Back</h2>
+                </div>
+                
+                <form class="login-form" action="/dashboard" method="GET">
+                    <div class="form-group">
+                        <input type="text" placeholder="Username or Email" class="form-input" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="password" placeholder="Password" class="form-input" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <button type="submit" class="login-btn">Login</button>
+                    </div>
+                    
+                    <div class="forgot-password">
+                        <a href="#" class="forgot-link">Forgot Password?</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="/js/login.js"></script>
+</body>
+</html>

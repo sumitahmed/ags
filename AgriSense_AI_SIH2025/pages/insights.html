@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insights - AgriSense AI</title>
+    <link rel="stylesheet" href="/styles/insights.css">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="nav-container">
+            <a href="/" style="text-decoration: none; color: inherit;">
+                <div class="logo">
+                    <h1>AgriSense AI</h1>
+                </div>
+            </a>
+            <nav class="nav-menu">
+                <a href="/dashboard" class="nav-link">Dashboard</a>
+                <a href="/fields" class="nav-link">Fields</a>
+                <a href="#" class="nav-link">Reports</a>
+                <a href="#" class="nav-link">Settings</a>
+            </nav>
+            <div class="profile-avatar">
+                <img src="/images/avatars/profile-avatar.png" alt="Profile Avatar">
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="content-container">
+            <section class="hero-section">
+                <div class="hero-background">
+                    <img src="/images/backgrounds/hero-background-4c8268.png" alt="Crop Field Background">
+                    <div class="hero-overlay"></div>
+                </div>
+                <div class="hero-content">
+                    <h2 class="hero-title">Crop Health Report</h2>
+                </div>
+            </section>
+
+            <section class="insights-content">
+                <div class="section">
+                    <h3 class="section-title">Overview</h3>
+                    <p class="section-text">
+                        This report provides a comprehensive analysis of the health of your crops, focusing on key indicators such as growth rate, disease detection, and nutrient levels. Our AI-powered system continuously monitors your fields, providing real-time insights and actionable recommendations to optimize crop yield and sustainability.
+                    </p>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">Growth Analysis</h3>
+                    <div class="growth-stats">
+                        <div class="stat-item">
+                            <h4 class="stat-label">Crop Growth Over Time</h4>
+                            <div class="stat-value">+15%</div>
+                            <div class="stat-period">
+                                <span class="period-label">Last 3 Months</span>
+                                <span class="period-value positive">+15%</span>
+                            </div>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="growthChart" width="928" height="200"></canvas>
+                            <div class="chart-labels">
+                                <span>Jan</span>
+                                <span>Feb</span>
+                                <span>Mar</span>
+                                <span>Apr</span>
+                                <span>May</span>
+                                <span>Jun</span>
+                                <span>Jul</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="section-text">
+                        The chart above illustrates the growth trend of your crops over the past three months. We've observed a 15% increase in growth, indicating healthy development. Our AI algorithms analyze various factors, including weather patterns, soil conditions, and crop-specific data, to provide accurate growth predictions and identify potential areas for improvement.
+                    </p>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">Disease Detection</h3>
+                    <div class="disease-stats">
+                        <div class="stat-item">
+                            <h4 class="stat-label">Disease Incidence</h4>
+                            <div class="stat-value">Low</div>
+                            <div class="stat-period">
+                                <span class="period-label">Current</span>
+                                <span class="period-value negative">-5%</span>
+                            </div>
+                        </div>
+                        <div class="disease-bars">
+                            <div class="disease-bar">
+                                <div class="bar-fill healthy"></div>
+                                <span class="bar-label">Healthy</span>
+                            </div>
+                            <div class="disease-bar">
+                                <div class="bar-fill mild"></div>
+                                <span class="bar-label">Mild</span>
+                            </div>
+                            <div class="disease-bar">
+                                <div class="bar-fill moderate"></div>
+                                <span class="bar-label">Moderate</span>
+                            </div>
+                            <div class="disease-bar">
+                                <div class="bar-fill severe"></div>
+                                <span class="bar-label">Severe</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="section-text">
+                        Our system employs advanced image recognition and machine learning techniques to detect and classify crop diseases. The current disease incidence is low, with a 5% decrease compared to the previous monitoring period. This suggests that your crops are generally healthy, but we recommend continued monitoring to prevent potential outbreaks.
+                    </p>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">Nutrient Levels</h3>
+                    <div class="nutrient-stats">
+                        <div class="stat-item">
+                            <h4 class="stat-label">Nutrient Balance</h4>
+                            <div class="stat-value">Optimal</div>
+                            <div class="stat-period">
+                                <span class="period-label">Current</span>
+                                <span class="period-value positive">+2%</span>
+                            </div>
+                        </div>
+                        <div class="nutrient-bars">
+                            <div class="nutrient-item">
+                                <span class="nutrient-name">Nitrogen</span>
+                                <div class="nutrient-bar">
+                                    <div class="bar-fill" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                            <div class="nutrient-item">
+                                <span class="nutrient-name">Phosphorus</span>
+                                <div class="nutrient-bar">
+                                    <div class="bar-fill" style="width: 78%;"></div>
+                                </div>
+                            </div>
+                            <div class="nutrient-item">
+                                <span class="nutrient-name">Potassium</span>
+                                <div class="nutrient-bar">
+                                    <div class="bar-fill" style="width: 92%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="section-text">
+                        Maintaining optimal nutrient levels is crucial for healthy crop growth. Our analysis indicates that your crops have a balanced nutrient profile, with a 2% improvement in overall nutrient levels. We monitor key nutrients such as nitrogen, phosphorus, and potassium, providing recommendations for fertilization to ensure optimal growth and yield.
+                    </p>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">Recommendations</h3>
+                    <div class="recommendations">
+                        <div class="recommendation-card">
+                            <div class="recommendation-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                    <path d="M2 17l10 5 10-5"></path>
+                                    <path d="M2 12l10 5 10-5"></path>
+                                </svg>
+                            </div>
+                            <div class="recommendation-content">
+                                <h4 class="recommendation-title">Fertilization</h4>
+                                <p class="recommendation-text">Apply a balanced fertilizer to maintain optimal nutrient levels.</p>
+                            </div>
+                        </div>
+                        <div class="recommendation-card">
+                            <div class="recommendation-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                     <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                     <path d="M2 17l10 5 10-5"></path>
+                                     <path d="M2 12l10 5 10-5"></path>
+                                </svg>
+                            </div>
+                            <div class="recommendation-content">
+                                <h4 class="recommendation-title">Disease Prevention</h4>
+                                <p class="recommendation-text">Continue monitoring for disease outbreaks, especially during periods of high humidity.</p>
+                            </div>
+                        </div>
+                        <div class="recommendation-card">
+                            <div class="recommendation-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                     <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                     <path d="M2 17l10 5 10-5"></path>
+                                     <path d="M2 12l10 5 10-5"></path>
+                                </svg>
+                            </div>
+                            <div class="recommendation-content">
+                                <h4 class="recommendation-title">Irrigation</h4>
+                                <p class="recommendation-text">Adjust irrigation schedule based on weather forecasts to optimize water usage.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="download-section">
+                    <button class="download-btn">
+                        Download Report
+                    </button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="/js/insights.js"></script>
+</body>
+</html>
