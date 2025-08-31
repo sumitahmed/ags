@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="/styles/dashboard.css">
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="dashboard">
         <header class="header">
@@ -17,27 +19,29 @@
                     </div>
                 </a>
                 <nav class="navigation">
+                    <a href="/dashboard" class="nav-item active">Dashboard</a>
                     <a href="/fields" class="nav-item">Fields</a>
                     <a href="/insights" class="nav-item">Insights</a>
-                    <a href="#" class="nav-item">Reports</a>
-                    <a href="#" class="nav-item">Settings</a>
-                    <div class="profile-avatar">
-                        <img src="/images/avatars/profile-avatar.png" alt="Profile" class="avatar-img">
-                    </div>
+                    <a href="/reports" class="nav-item">Reports</a>
+                    <a href="/settings" class="nav-item">Settings</a>
                 </nav>
+                <div class="profile-avatar">
+                    <img src="/images/avatars/profile-avatar.png" alt="Profile" class="avatar-img">
+                </div>
             </div>
-        </header>
+        </header>>
 
         <main class="main-content">
             <div class="content-wrapper">
                 <section class="field-health-section">
                     <h2 class="section-title">Field Health Overview</h2>
-                    
+
                     <div class="field-visualization">
                         <div class="field-background">
-                            <img src="/images/backgrounds/field-background.png" alt="Field Background" class="field-img">
+                            <img src="/images/backgrounds/field-background.png" alt="Field Background"
+                                class="field-img">
                         </div>
-                        
+
                         <div class="chart-controls">
                             <div class="chart-control">
                                 <img src="/images/icons/leaf-icon.svg" alt="Leaf" class="control-icon">
@@ -74,7 +78,7 @@
 
                     <div class="alerts-section">
                         <h3 class="alerts-title">Alerts</h3>
-                        
+
                         <div class="alert-item">
                             <div class="alert-icon">
                                 <img src="/images/icons/alert-icon.svg" alt="Alert" class="icon">
@@ -84,7 +88,7 @@
                                 <div class="alert-severity">Severity: Medium</div>
                             </div>
                         </div>
-                        
+
                         <div class="alert-item">
                             <div class="alert-icon">
                                 <img src="/images/icons/alert-icon-2.svg" alt="Alert" class="icon">
@@ -94,7 +98,7 @@
                                 <div class="alert-severity">Severity: Low</div>
                             </div>
                         </div>
-                        
+
                         <div class="alert-item">
                             <div class="alert-icon">
                                 <img src="/images/icons/alert-icon-3.svg" alt="Alert" class="icon">
@@ -109,7 +113,8 @@
             </div>
         </main>
     </div>
-    
+
     <script src="/js/dashboard.js"></script>
 </body>
+
 </html>

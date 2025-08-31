@@ -460,3 +460,8 @@ body {
         font-size: 20px;
     }
 }
+/* Add this to your CSS files */
+.navigation .nav-item.active {
+    color: #4CAF50; 
+    font-weight: 700;
+}

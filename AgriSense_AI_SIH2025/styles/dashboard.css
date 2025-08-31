@@ -341,3 +341,10 @@ body {
         padding: 16px 12px 8px;
     }
 }
+
+/* Add this to the bottom of styles/dashboard.css */
+.navigation .nav-item.active {
+    color: #4CAF50; /* A nice green highlight color */
+    font-weight: 700;
+    text-decoration: underline;
+}
