@@ -1,120 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - AgriSense AI</title>
     <link rel="stylesheet" href="/styles/dashboard.css">
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-
 <body>
-    <div class="dashboard">
-        <header class="header">
-            <div class="header-content">
-                <a href="/" style="text-decoration: none; color: inherit;">
-                    <div class="logo-section">
-                        <h1 class="logo">AgriSense AI</h1>
+    <header class="header">
+    <div class="header-content">
+        <div class="logo-and-nav">
+            <a href="/" style="text-decoration: none; color: inherit;"><h1 class="logo">AgriSense AI</h1></a>
+            <nav class="nav-menu">
+                <a href="/dashboard" class="nav-link">Dashboard</a>
+                <a href="/fields" class="nav-link">Fields</a>
+                <a href="/reports" class="nav-link">Reports</a>
+                <a href="/insights" class="nav-link">Insights</a>
+                <a href="/settings" class="nav-link">Settings</a>
+            </nav>
+        </div>
+        <div class="header-actions">
+            <button class="search-button">
+                <i class="fas fa-search"></i>
+                <span>Search</span>
+            </button>
+            <div class="profile-avatar">
+                <img class="avatar-img" src="/images/avatars/profile-avatar.png" alt="Profile">
+            </div>
+        </div>
+    </div>
+</header>
+
+    <main class="main-content">
+        <section class="search-section">
+            <div class="search-container-large">
+                <div class="search-icon-large">
+                    <i class="fas fa-search"></i>
+                </div>
+                <input type="text" class="search-input-large" placeholder="Search fields or filter by date">
+            </div>
+        </section>
+
+        <section class="map-section">
+            <div class="map-container">
+                <div class="map-overlay">
+                    <div class="map-search">
+                        <div class="search-icon-map"><i class="fas fa-search"></i></div>
+                        <input type="text" class="map-search-input" placeholder="Search for a field">
                     </div>
-                </a>
-                <nav class="navigation">
-                    <a href="/dashboard" class="nav-item active">Dashboard</a>
-                    <a href="/fields" class="nav-item">Fields</a>
-                    <a href="/insights" class="nav-item">Insights</a>
-                    <a href="/reports" class="nav-item">Reports</a>
-                    <a href="/settings" class="nav-item">Settings</a>
-                </nav>
-                <div class="profile-avatar">
-                    <img src="/images/avatars/profile-avatar.png" alt="Profile" class="avatar-img">
+                </div>
+                <div class="map-content">
+                    <div class="map-location park-cone">
+                        <div class="location-marker"><i class="fas fa-mountain"></i></div>
+                        <span class="location-label">Park Cone</span>
+                    </div>
+                    <div class="map-location ptari">
+                        <span class="location-label">Ptari</span>
+                    </div>
                 </div>
             </div>
-        </header>>
+        </section>
 
-        <main class="main-content">
-            <div class="content-wrapper">
-                <section class="field-health-section">
-                    <h2 class="section-title">Field Health Overview</h2>
-
-                    <div class="field-visualization">
-                        <div class="field-background">
-                            <img src="/images/backgrounds/field-background.png" alt="Field Background"
-                                class="field-img">
-                        </div>
-
-                        <div class="chart-controls">
-                            <div class="chart-control">
-                                <img src="/images/icons/leaf-icon.svg" alt="Leaf" class="control-icon">
-                            </div>
-                            <div class="chart-control">
-                                <img src="/images/icons/chart-icon.svg" alt="Chart" class="control-icon">
-                            </div>
-                            <div class="chart-control">
-                                <img src="/images/icons/chart-icon-2.svg" alt="Chart" class="control-icon">
-                            </div>
-                            <div class="chart-control">
-                                <img src="/images/icons/chart-icon-3.svg" alt="Chart" class="control-icon">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="metrics-grid">
-                        <div class="metric-card">
-                            <div class="metric-label">NDVI</div>
-                            <div class="metric-value">0.75</div>
-                            <div class="metric-change positive">+2%</div>
-                        </div>
-                        <div class="metric-card">
-                            <div class="metric-label">EVI</div>
-                            <div class="metric-value">0.68</div>
-                            <div class="metric-change negative">-1%</div>
-                        </div>
-                        <div class="metric-card">
-                            <div class="metric-label">SAVI</div>
-                            <div class="metric-value">0.82</div>
-                            <div class="metric-change positive">+3%</div>
-                        </div>
-                    </div>
-
-                    <div class="alerts-section">
-                        <h3 class="alerts-title">Alerts</h3>
-
-                        <div class="alert-item">
-                            <div class="alert-icon">
-                                <img src="/images/icons/alert-icon.svg" alt="Alert" class="icon">
-                            </div>
-                            <div class="alert-content">
-                                <div class="alert-title">Pest Infestation Detected</div>
-                                <div class="alert-severity">Severity: Medium</div>
-                            </div>
-                        </div>
-
-                        <div class="alert-item">
-                            <div class="alert-icon">
-                                <img src="/images/icons/alert-icon-2.svg" alt="Alert" class="icon">
-                            </div>
-                            <div class="alert-content">
-                                <div class="alert-title">Nutrient Deficiency</div>
-                                <div class="alert-severity">Severity: Low</div>
-                            </div>
-                        </div>
-
-                        <div class="alert-item">
-                            <div class="alert-icon">
-                                <img src="/images/icons/alert-icon-3.svg" alt="Alert" class="icon">
-                            </div>
-                            <div class="alert-content">
-                                <div class="alert-title">Water Stress Detected</div>
-                                <div class="alert-severity">Severity: High</div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+        <section class="metrics-section">
+            <h2 class="section-title">Crop Health Metrics</h2>
+            <div class="metrics-tabs">
+                <button class="metric-tab active">NDVI</button>
+                <button class="metric-tab">EVI</button>
+                <button class="metric-tab">SAVI</button>
             </div>
-        </main>
-    </div>
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <h3 class="metric-title">Normalized Difference Vegetation Index</h3>
+                    <div class="metric-value">0.75</div>
+                    <div class="metric-change positive">+2.5%</div>
+                </div>
+                <div class="metric-card">
+                    <h3 class="metric-title">Enhanced Vegetation Index</h3>
+                    <div class="metric-value">0.68</div>
+                    <div class="metric-change negative">-1.2%</div>
+                </div>
+                <div class="metric-card">
+                    <h3 class="metric-title">Soil-Adjusted Vegetation Index</h3>
+                    <div class="metric-value">0.82</div>
+                    <div class="metric-change positive">+3.8%</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="trends-section">
+            <h2 class="section-title">Recent Trends</h2>
+            <div class="trends-grid">
+                <div class="trend-card">
+                    <div class="trend-header"><h3 class="trend-title">NDVI Trend</h3></div>
+                    <div class="trend-chart"><canvas id="ndviChart" width="300" height="150"></canvas></div>
+                </div>
+                <div class="trend-card">
+                    <div class="trend-header"><h3 class="trend-title">EVI Trend</h3></div>
+                    <div class="trend-chart"><canvas id="eviChart" width="300" height="150"></canvas></div>
+                </div>
+                <div class="trend-card">
+                    <div class="trend-header"><h3 class="trend-title">SAVI Trend</h3></div>
+                    <div class="trend-chart"><canvas id="saviChart" width="300" height="150"></canvas></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-section">
+            <h2 class="section-title">Quick Stats</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3 class="stat-title">Overall Crop Health</h3>
+                    <div class="stat-value">85%</div>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-title">Average Soil Moisture</h3>
+                    <div class="stat-value">15%</div>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-title">Pest Risk Level</h3>
+                    <div class="stat-value">Low</div>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-title">Suggested Irrigation Window</h3>
+                    <div class="stat-value">Tomorrow</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="alerts-section">
+            <h2 class="section-title">Alerts</h2>
+            <div class="alerts-container">
+                <div class="alert-item">
+                    <div class="alert-icon"><i class="fas fa-info-circle"></i></div>
+                    <div class="alert-content">
+                        <h3 class="alert-title">Irrigation Needed</h3>
+                        <p class="alert-description">Field A1 - Low Moisture Stress</p>
+                    </div>
+                    <button class="alert-action">Apply Treatment</button>
+                </div>
+                <div class="alert-item">
+                    <div class="alert-icon"><i class="fas fa-info-circle"></i></div>
+                    <div class="alert-content">
+                        <h3 class="alert-title">Schedule Inspection</h3>
+                        <p class="alert-description">Field B2 - Potential Pest Infestation</p>
+                    </div>
+                    <button class="alert-action">Schedule Inspection</button>
+                </div>
+                <div class="alert-item">
+                    <div class="alert-icon"><i class="fas fa-info-circle"></i></div>
+                    <div class="alert-content">
+                        <h3 class="alert-title">Fertilizer Application</h3>
+                        <p class="alert-description">Field C3 - Nutrient Deficiency</p>
+                    </div>
+                    <button class="alert-action">Apply Treatment</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="events-section">
+            <h2 class="section-title">Upcoming Events</h2>
+            <div class="events-container">
+                <div class="event-item">
+                    <div class="event-timeline"><div class="event-icon"><i class="fas fa-search"></i></div><div class="timeline-line"></div></div>
+                    <div class="event-content">
+                        <h3 class="event-title">Field Inspection</h3>
+                        <p class="event-time">Field B2 - Tomorrow</p>
+                    </div>
+                </div>
+                 <div class="event-item">
+                    <div class="event-timeline"><div class="event-icon"><i class="fas fa-calendar-alt"></i></div><div class="timeline-line"></div></div>
+                    <div class="event-content">
+                        <h3 class="event-title">Treatment Deadline</h3>
+                        <p class="event-time">Field C3 - In 3 days</p>
+                    </div>
+                </div>
+                <div class="event-item">
+                    <div class="event-timeline"><div class="event-icon"><i class="fas fa-cog"></i></div></div>
+                    <div class="event-content">
+                        <h3 class="event-title">Sensor Calibration</h3>
+                        <p class="event-time">All Fields - Next Week</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="activity-section">
+            <h2 class="section-title">Activity Log</h2>
+            <div class="activity-container">
+                <div class="activity-item">
+                    <div class="activity-icon"><i class="fas fa-clock"></i></div>
+                    <div class="activity-content">
+                        <h3 class="activity-title">Sensor Data Updated</h3>
+                        <p class="activity-description">2 hours ago</p>
+                    </div>
+                </div>
+                <div class="activity-item">
+                    <div class="activity-icon"><i class="fas fa-check-circle"></i></div>
+                    <div class="activity-content">
+                        <h3 class="activity-title">Treatment Applied</h3>
+                        <p class="activity-description">Yesterday</p>
+                    </div>
+                </div>
+                <div class="activity-item">
+                    <div class="activity-icon"><i class="fas fa-calendar-plus"></i></div>
+                    <div class="activity-content">
+                        <h3 class="activity-title">Inspection Scheduled</h3>
+                        <p class="activity-description">2 days ago</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <script src="/js/dashboard.js"></script>
 </body>
-
 </html>

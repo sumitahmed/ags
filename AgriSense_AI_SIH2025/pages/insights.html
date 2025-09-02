@@ -9,21 +9,25 @@
 </head>
 <body>
     <header class="header">
-    <div class="nav-container">
-        <a href="/" style="text-decoration: none; color: inherit;">
-            <div class="logo">
-                <h1>AgriSense AI</h1>
+    <div class="header-content">
+        <div class="logo-and-nav">
+            <a href="/" style="text-decoration: none; color: inherit;"><h1 class="logo">AgriSense AI</h1></a>
+            <nav class="nav-menu">
+                <a href="/dashboard" class="nav-link">Dashboard</a>
+                <a href="/fields" class="nav-link">Fields</a>
+                <a href="/reports" class="nav-link">Reports</a>
+                <a href="/insights" class="nav-link">Insights</a>
+                <a href="/settings" class="nav-link">Settings</a>
+            </nav>
+        </div>
+        <div class="header-actions">
+            <button class="search-button">
+                <i class="fas fa-search"></i>
+                <span>Search</span>
+            </button>
+            <div class="profile-avatar">
+                <img class="avatar-img" src="/images/avatars/profile-avatar.png" alt="Profile">
             </div>
-        </a>
-        <nav class="nav-menu">
-            <a href="/dashboard" class="nav-link">Dashboard</a>
-            <a href="/fields" class="nav-link">Fields</a>
-            <a href="/insights" class="nav-link active">Insights</a>
-            <a href="/reports" class="nav-link">Reports</a>
-            <a href="/settings" class="nav-link">Settings</a>
-        </nav>
-        <div class="profile-avatar">
-            <img src="/images/avatars/profile-avatar.png" alt="Profile Avatar">
         </div>
     </div>
 </header>
@@ -81,7 +85,7 @@
                     <h3 class="section-title">Disease Detection</h3>
                     <div class="disease-stats">
                         <div class="stat-item">
-                            <h4 class="stat-label">Disease Incidence</h4>
+                            <h4 class="stat-label">Corp Health</h4>
                             <div class="stat-value">Low</div>
                             <div class="stat-period">
                                 <span class="period-label">Current</span>

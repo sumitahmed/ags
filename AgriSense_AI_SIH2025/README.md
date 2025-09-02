@@ -1,64 +1,49 @@
-# AgriSense AI Project
+AgriSense AI (SIH 2025)
+This repository contains the source code for the AgriSense AI web application, a project for the Smart India Hackathon 2025.
 
-## Overview
-AgriSense AI is a web application designed to provide insights and management tools for agricultural data. This project serves as a platform for users to access various functionalities related to agriculture, including dashboards, field management, and insights generation.
+Project Structure
 
-## Project Structure
-The project is organized into the following directories and files:
-
-```
 AgriSense_AI_SIH2025/
-├── index.html            # Main entry point (Landing Page or Login Page)
-├── styles/               # CSS files for styling
-│   ├── dashboard.css
-│   ├── fields.css
-│   ├── insights.css
-│   ├── landing.css
-│   └── login.css
-├── js/                   # JavaScript files for functionality
-│   ├── dashboard.js
-│   ├── fields.js
-│   ├── insights.js
-│   ├── landing.js
-│   └── login.js
-├── images/               # Directory for images (PNG, SVG, icons)
-├── pages/                # HTML files for different sections
+├── index.html              # The main landing page
+├── server.js               # Node.js Express server for routing
+├── package.json
+│
+├── pages/                  # Application HTML pages
 │   ├── dashboard.html
 │   ├── fields.html
 │   ├── insights.html
-│   ├── landing.html
-│   └── login.html
-├── server.js             # Node/Express server (optional)
-├── package.json          # npm configuration file
-└── README.md             # Project documentation
-```
+│   ├── login.html
+│   ├── reports.html
+│   └── settings.html
+│
+├── styles/                 # All page-specific CSS files
+│
+├── js/                     # All page-specific JavaScript files
+│
+└── images/                 # All static image assets
+    ├── avatars/
+    ├── backgrounds/
+    ├── icons/
+    └── reports/
+How to Run
+Follow these steps to get the application running on your local machine.
 
-## Setup Instructions
-1. **Clone the repository**:
-   ```
-   git clone <repository-url>
-   cd AgriSense_AI_SIH2025
-   ```
+1. Install Dependencies
+You'll need Node.js installed. Open your terminal in the project root and run:
 
-2. **Install dependencies**:
-   ```
-   npm install
-   ```
+Bash
 
-3. **Run the server** (if applicable):
-   ```
-   node server.js
-   ```
+npm install
+This command installs the express framework, which is the only dependency.
 
-4. **Open the application**:
-   Navigate to `http://localhost:3000` in your web browser.
+2. Start the Server
+Once the installation is complete, start the local server with:
 
-## Usage
-- The application provides a landing page for user login.
-- After logging in, users can access the dashboard, manage fields, and view insights.
+Bash
 
-## Contributing
-Contributions are welcome! Please submit a pull request or open an issue for any enhancements or bug fixes.
+npm start
+You should see a message in the terminal confirming that the server is running:
+🚀 Server running at http://localhost:3000
 
-## License
-This project is licensed under the MIT License. See the LICENSE file for more details.
+3. Open in Browser
+Navigate to http://localhost:3000 in your web browser to use the application.

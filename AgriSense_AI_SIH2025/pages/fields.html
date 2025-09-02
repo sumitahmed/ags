@@ -3,172 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fields Overview - AgriSense AI</title>
+    <title>Fields - AgriSense AI</title>
+    <!-- Correct paths for local server -->
     <link rel="stylesheet" href="/styles/fields.css">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <header class="header">
+    <header class="header">
     <div class="header-content">
-        <a href="/" style="text-decoration: none; color: inherit;">
-            <div class="logo-section">
-                <h1 class="logo">AgriSense AI</h1>
+        <div class="logo-and-nav">
+            <a href="/" style="text-decoration: none; color: inherit;"><h1 class="logo">AgriSense AI</h1></a>
+            <nav class="nav-menu">
+                <a href="/dashboard" class="nav-link">Dashboard</a>
+                <a href="/fields" class="nav-link">Fields</a>
+                <a href="/reports" class="nav-link">Reports</a>
+                <a href="/insights" class="nav-link">Insights</a>
+                <a href="/settings" class="nav-link">Settings</a>
+            </nav>
+        </div>
+        <div class="header-actions">
+            <button class="search-button">
+                <i class="fas fa-search"></i>
+                <span>Search</span>
+            </button>
+            <div class="profile-avatar">
+                <img class="avatar-img" src="/images/avatars/profile-avatar.png" alt="Profile">
             </div>
-        </a>
-        <nav class="navigation">
-            <a href="/dashboard" class="nav-link">Dashboard</a>
-            <a href="/fields" class="nav-link active">Fields</a>
-            <a href="/insights" class="nav-link">Insights</a>
-            <a href="/reports" class="nav-link">Reports</a>
-            <a href="/settings" class="nav-link">Settings</a>
-        </nav>
-        <div class="profile-section">
-            <img src="/images/avatars/profile-avatar.png" alt="Profile" class="profile-avatar">
         </div>
     </div>
 </header>
 
-        <main class="main-content">
-            <div class="content-wrapper">
-                <div class="left-column">
-                    <div class="farm-overview">
-                        <h2 class="section-title">Farm Overview</h2>
-                        
-                        <div class="tab-navigation">
-                            <div class="tab active">Soil Stats</div>
-                            <div class="tab">Pest Alerts</div>
-                            <div class="tab">Historical Changes</div>
-                        </div>
-
-                        <div class="soil-health-section">
-                            <h3 class="subsection-title">Soil Health</h3>
-                            
-                            <div class="metric-item">
-                                <div class="metric-info">
-                                    <span class="metric-label">Nutrient Levels</span>
-                                    <span class="metric-value">75%</span>
-                                </div>
-                                <div class="progress-bar">
-                                    <div class="progress-fill" style="width: 75%"></div>
-                                </div>
-                            </div>
-
-                            <div class="metric-item">
-                                <div class="metric-info">
-                                    <span class="metric-label">Moisture Content</span>
-                                    <span class="metric-value">60%</span>
-                                </div>
-                                <div class="progress-bar">
-                                    <div class="progress-fill" style="width: 60%"></div>
-                                </div>
-                            </div>
-
-                            <div class="metric-item">
-                                <div class="metric-info">
-                                    <span class="metric-label">pH Balance</span>
-                                    <span class="metric-value">80%</span>
-                                </div>
-                                <div class="progress-bar">
-                                    <div class="progress-fill" style="width: 80%"></div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="pest-alerts-section">
-                            <h3 class="subsection-title">Pest Alerts</h3>
-                            
-                            <div class="alert-item">
-                                <div class="alert-icon">
-                                    <img src="/images/icons/pest-icon.svg" alt="Pest Alert" class="icon">
-                                </div>
-                                <div class="alert-content">
-                                    <div class="alert-title">Aphids</div>
-                                    <div class="alert-status high-risk">High risk detected</div>
-                                </div>
-                            </div>
-
-                            <div class="alert-item">
-                                <div class="alert-icon">
-                                    <img src="/images/icons/pest-icon.svg" alt="Pest Alert" class="icon">
-                                </div>
-                                <div class="alert-content">
-                                    <div class="alert-title">Spider Mites</div>
-                                    <div class="alert-status moderate-risk">Moderate risk detected</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="historical-changes-section">
-                            <h3 class="subsection-title">Historical Changes</h3>
-                            
-                            <div class="timeline">
-                                <div class="timeline-item">
-                                    <div class="timeline-marker">
-                                        <img src="/images/icons/chart-icon.svg" alt="Chart" class="icon">
-                                        <div class="timeline-line"></div>
-                                    </div>
-                                    <div class="timeline-content">
-                                        <div class="timeline-title">Soil Improvement</div>
-                                        <div class="timeline-year">2022</div>
-                                    </div>
-                                </div>
-
-                                <div class="timeline-item">
-                                    <div class="timeline-marker">
-                                        <div class="timeline-line-short"></div>
-                                        <img src="/images/icons/chart-icon-2.svg" alt="Chart" class="icon">
-                                        <div class="timeline-line"></div>
-                                    </div>
-                                    <div class="timeline-content">
-                                        <div class="timeline-title">Pest Outbreak</div>
-                                        <div class="timeline-year">2023</div>
-                                    </div>
-                                </div>
-
-                                <div class="timeline-item">
-                                    <div class="timeline-marker">
-                                        <div class="timeline-line-short"></div>
-                                        <img src="/images/icons/chart-icon-3.svg" alt="Chart" class="icon">
-                                    </div>
-                                    <div class="timeline-content">
-                                        <div class="timeline-title">Yield Increase</div>
-                                        <div class="timeline-year">2024</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="right-column">
-                    <div class="search-section">
-                        <div class="search-container">
-                            <div class="search-input-wrapper">
-                                <div class="search-icon">
-                                    <img src="/images/icons/search-icon.svg" alt="Search" class="icon">
-                                </div>
-                                <input type="text" placeholder="Search for a farm" class="search-input">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="action-buttons">
-                        <button class="action-btn">
-                            <img src="/images/icons/notification-icon.svg" alt="Notifications" class="icon">
-                        </button>
-                        <button class="action-btn">
-                            <img src="/images/icons/settings-icon.svg" alt="Settings" class="icon">
-                        </button>
-                        <button class="action-btn">
-                            <img src="/images/icons/profile-icon.svg" alt="Profile" class="icon">
-                        </button>
-                    </div>
-                </div>
+    <main class="main-content">
+        <!-- Left Sidebar -->
+        <aside class="sidebar">
+            <h2 class="sidebar-title">Fields</h2>
+            <div class="search-container">
+                <i class="fas fa-search"></i>
+                <input type="text" class="search-input" placeholder="Search for a farm">
             </div>
-        </main>
-    </div>
+            <!-- Future content for the sidebar can go here, like a list of farms -->
+        </aside>
 
+        <!-- Right Main View -->
+        <div class="main-view">
+            <div class="farm-overview">
+                <h2>Farm Overview</h2>
+                <div class="tab-navigation">
+                    <div class="tab active">Soil Stats</div>
+                    <div class="tab">Pest Alerts</div>
+                    <div class="tab">Historical Changes</div>
+                </div>
+
+                <!-- Soil Health Section -->
+                <section class="content-section" id="soil-health">
+                    <h3>Soil Health</h3>
+                    <div class="metric-item">
+                        <div class="metric-info">
+                            <span class="metric-label">Nutrient Levels</span>
+                            <span class="metric-value">75%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                    <div class="metric-item">
+                        <div class="metric-info">
+                            <span class="metric-label">Moisture Content</span>
+                            <span class="metric-value">60%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                    <div class="metric-item">
+                        <div class="metric-info">
+                            <span class="metric-label">Leaf Wetness</span>
+                            <span class="metric-value">80%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Pest Alerts Section -->
+                <section class="content-section" id="pest-alerts">
+                    <h3>Pest Alerts</h3>
+                    <div class="alert-item">
+                        <div class="alert-icon"><i class="fas fa-bug"></i></div>
+                        <div class="alert-content">
+                            <div class="alert-title">Aphids</div>
+                            <div class="alert-status">High risk detected</div>
+                        </div>
+                    </div>
+                    <div class="alert-item">
+                        <div class="alert-icon"><i class="fas fa-spider"></i></div>
+                        <div class="alert-content">
+                            <div class="alert-title">Spider Mites</div>
+                            <div class="alert-status">Moderate risk detected</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Historical Changes Section -->
+                <section class="content-section" id="historical-changes">
+                    <h3>Historical Changes</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <div class="timeline-icon"><i class="fas fa-leaf"></i></div>
+                                <div class="timeline-line"></div>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-title">Soil Improvement</div>
+                                <div class="timeline-year">2022</div>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <div class="timeline-icon"><i class="fas fa-viruses"></i></div>
+                                <div class="timeline-line"></div>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-title">Pest Outbreak</div>
+                                <div class="timeline-year">2023</div>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <div class="timeline-icon"><i class="fas fa-chart-line"></i></div>
+                            </div>
+                            <div class="timeline-content">
+                                <div class="timeline-title">Yield Increase</div>
+                                <div class="timeline-year">2024</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+            <button class="action-btn" title="Zoom In"><i class="fas fa-plus"></i></button>
+            <button class="action-btn" title="Zoom Out"><i class="fas fa-minus"></i></button>
+            <button class="action-btn" title="My Location"><i class="fas fa-location-arrow"></i></button>
+        </div>
+    </main>
+    
     <script src="/js/fields.js"></script>
 </body>
 </html>
